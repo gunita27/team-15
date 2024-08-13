@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  font-family: "Times New Roman", Times, serif;
+  align-items: center;
+}
+
+nav {
+  border-bottom: 1px solid rgb(185, 177, 177);
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, */
+  /* rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
+}
+
+#nav1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  img {
+    height: 40px;
+  }
+}
+
+#nav2 {
+  /* border: 2px solid black; */
+  display: flex;
+  gap: 2em;
+  align-items: center;
+
+  #about {
+    border: none;
+  }
+
+  #login {
+    color: white;
+    background-color: rgb(73, 120, 181);
+    padding: 10px 15px;
+    border: 2px solid rgb(73, 120, 181);
+  }
+}
+
+#nav3 {
+  #search {
+    height: 40px;
+    padding: 0px 10px;
+  }
+}
+
+.hero1 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+  margin-bottom: 10px;
+
+  img {
+    width: 100vw;
+  }
+}
+
+.hero2 {
+  display: flex;
+  justify-content: center;
+}
+
+.hero2 .container {
+  flex-direction: column;
+  background-color: rgb(73, 120, 181);
+  width: 97vw;
+  padding: 3em 0;
+  border-radius: 10px;
+
+  #uni {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 3em;
+  }
+
+  #socials {
+    display: flex;
+    color: white;
+    gap: 1em;
+  }
+}
+
+.section1 {
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.section1 .container {
+  background-color: rgb(73, 120, 181);
+  width: 94.4vw;
+  padding: 1em 1em;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.about_section .container {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  text-align: left;
+  padding: 2em;
+  line-height: 1.4em;
+
+  h1 {
+    background-color: rgb(73, 120, 181);
+    width: 94vw;
+    color: white;
+    padding: 10px;
+  }
+}
+
+.past_events .container {
+  flex-direction: column;
+}
+
+.events {
+  display: flex;
+  width: 90vw;
+  overflow-x: scroll;
+  gap: 2em;
+  #card {
+    width: 500px;
+
+    img {
+      width: 300px;
+      height: 200px;
+    }
+  }
+}
